@@ -5,7 +5,7 @@
   --theme-color2: #911935;
   --title-color: #ffffff;
   --body-color: #a9a9a9;
-  --smoke-color: #04111f;
+  --smoke-color: #061423;
   --smoke-color2: #fff7ed;
   --smoke-color3: #dff8f6;
   --smoke-color4: #fff9ef;
@@ -28,8 +28,44 @@
   --section-space-mobile: 70px;
   --section-title-space: 50px;
   --ripple-ani-duration: 5s;
-  --ot-body-background:  linear-gradient(94deg,rgb(91, 15, 16) 18%, rgb(220, 115, 35) 100%);;
+  --ot-body-background:  linear-gradient(94deg,rgb(91, 15, 16) 18%, rgb(220, 115, 35) 100%);
+  --gray-bg:linear-gradient(94deg,rgb(211, 211, 211) 18%, rgb(234, 234, 234) 100%);
+  --gray-bg: rgb(230, 230, 230);
+  --text-cmt:#000;
 }
+
+.gray-bg{
+  background-color:var(--gray-bg);
+}
+
+.black-text{
+  color: #000 !important;
+}
+
+.back-subtext{
+   color: #252525 !important;
+}
+
+.cmt-bg-main{
+  position: relative;
+}
+
+.cmt-bg{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+.cmt-bg > img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   filter: invert(1) !important;
+   opacity: 0.5;
+}
+
 html,
 body {
   scroll-behavior: auto !important;
@@ -6043,8 +6079,8 @@ a.text-theme:hover,
 }
 .header-top {
   padding: 11px 0;
-  background-color: var(--theme-color);
-  --body-color: #fff;
+  background-color: rgb(242, 241, 241);
+  --body-color: #000;
 }
 .header-top a:hover {
   color: var(--title-color);
